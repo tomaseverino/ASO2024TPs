@@ -1,7 +1,0 @@
-1) ¿Qué sucede con el valor final del acumulador?
-
-El valor final del acumulador va a ser siempre 0. Esto es porque el uso del candado asegura que las operaciones de suma y resta se realicen de forma atomica y ordenada, evitando cualquier interferencia entre los hilos.
-
-2) ¿Qué se puede notar con respecto al tiempo de ejecución?
-
-Puede ser ligeramente mayor que en el caso no sincronizado debido a la sobrecarga de la gestión de la sincronización, pero, esta sobrecarga es generalmente pequeña en comparación con el beneficio de la corrección en el acceso concurrente y aunque los hilos 1 y 2 se ejecutan en paralelo, el acceso a acumulador está protegido, lo que puede hacer que un hilo espere mientras el otro accede a la sección crítica.
