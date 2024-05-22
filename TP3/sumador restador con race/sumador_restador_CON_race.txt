@@ -1,0 +1,15 @@
+1) ¿Qué se puede notar con respecto al tiempo de ejecución?
+
+El código multihilo puede ser más rápido que el secuencial, pero no siempre debido al overhead de los hilos y la sincronización.
+
+2)a) ¿Qué sucede con el valor final del acumulador?
+
+Lo que sucede con el valor final del acumulador es que varía debido a la condición de carrera.
+
+2)b) ¿Por qué sucede esto?
+
+La razón de la variacion son los accesos concurrentes sin sincronización adecuada.
+
+3) ¿Cómo se puede corregir esta condición de carrera sin dejar de utilizar hilos?
+
+La correción adecuada sin dejar de utilizar hilos es utilizar mecanismos de sincronización, como locks, para proteger las secciones críticas del código.

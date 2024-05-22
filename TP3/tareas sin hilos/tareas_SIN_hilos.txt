@@ -1,0 +1,14 @@
+1) ¿Qué se puede notar con respecto al tiempo de ejecución? ¿Es predecible?
+
+La tarea 1 toma un tiempo considerable debido a la cantidad de operaciones repetitivas que realiza y su tiempo de ejecución puede variar en función de la carga actual del CPU y otras tareas que se estén ejecutando en el sistema.
+
+La tarea 2 y la tarea 3 utilizan la función time.sleep() con un tiempo de espera fijo (1 segundo y 4 segundos respectivamente), esto hace que sus tiempos de ejecución sean bastante mas predecibles que la tarea 1.
+
+
+2) Nombrar un proceso o función de la vida real que pueden ser considerados procesos de “máxima velocidad posible” que dependen casi exclusivamente de la velocidad de la máquina que los ejecuta.
+
+Operaciones como el filtrado, redimensionamiento, o compresión de imágenes dependen casi exclusivamente de la capacidad de procesamiento del CPU y de la memoria del sistema.
+
+3) Nombrar un proceso o función de la vida real que pueden ser considerados procesos de “velocidad de respuesta no dependiente de la velocidad de procesamiento” o que sea de naturaleza impredecible o externa.
+
+Un programa que espera la entrada de un usuario (por ejemplo, pulsaciones de teclas) no puede predecir cuándo ocurrirán estas entradas, el tiempo de espera para la interacción del usuario es impredecible a menos que haya un contador que limite el tiempo que tiene el usuario para ingresar un dato.
